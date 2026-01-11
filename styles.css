@@ -36,9 +36,10 @@ h1 {
 
 dialog {
   border: none;
-  box-shadow: 2px 2px 3px rgb(235, 235, 235);
-  margin: 2em;
   padding: 2em;
+  align-self: center;
+  justify-self: center;
+  width: 30vw;
 }
 
 dialog::backdrop {
@@ -46,3 +47,23 @@ dialog::backdrop {
   opacity: 0.5;
 }
 
+.submit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.submit > * {
+  margin: 0.3em;
+}
+
+.add-book, .close {
+  width: 7em;
+}
+
+.errors {
+  font-size: 0.8em;
+  color: red;
+  font-weight: bold;
+  margin-top: 1em;
+}
